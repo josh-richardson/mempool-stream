@@ -82,7 +82,7 @@
 			<Cell>{truncate(tx.From, trunc)}</Cell>
 			<Cell>{truncate(tx.To, trunc)}</Cell>
 			<Cell>{tx.Value}</Cell>
-			<Cell><a href="#$">View Details</a></Cell>
+			<Cell><a href="#$" on:click={() => alert(JSON.stringify(tx))}>View Details</a></Cell>
 			
 		</Row>
 	{/each}
