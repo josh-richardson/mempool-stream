@@ -13,6 +13,10 @@ const hub = {
         socket.emit('datachanged', { time: Date.now() });
     },
     beginUpdating: () => {
+        setInterval(() => {
+            console.log(`Seen TXes: ${existing.size}`)
+        }, 5000)
+
         amqp.connect('amqp://localhost', (error0, connection) => {
             if (error0) {
                 throw error0;
