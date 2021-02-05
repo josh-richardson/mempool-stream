@@ -51,8 +51,8 @@
 <nav>
 	<ul>
 		<li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">home</a></li>
-		<li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">large transactions</a></li>
-		<li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">DEX trades</a></li>
+		<li><a aria-current="{segment === 'large' ? 'page' : undefined}" on:click={() => alert('Coming soon!')} href=".">large transactions</a></li>
+		<li><a aria-current="{segment === 'dex' ? 'page' : undefined}"  on:click={() => alert('Coming soon!')} href=".">DEX trades</a></li>
 		<!-- <li><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">about</a></li> -->
 
 		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
